@@ -557,6 +557,7 @@ body {
     transform: translate(-50%, -50%);
 
     padding: 40px;
+    border-radius: 4px;
 }
 .btn-close {
     position: absolute;
@@ -571,6 +572,11 @@ body {
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    transition: fill var(--transition-dur-fanc);
+}
+.btn-close:hover,
+.btn-close:focus {
+    fill: var(--color-selected);
 }
 
 .modal-discription {
@@ -667,6 +673,7 @@ body {
 
     align-items: center;
     margin-bottom: 30px;
+    justify-content: center;
 }
 
 .form-checkbox::before {
